@@ -8,5 +8,6 @@ export const useCounter = defineStore('counter', {
         increment() {
             this.count ++
         }
-    }
+    },
+    persist: true
 })
