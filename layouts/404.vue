@@ -1,0 +1,17 @@
+<template>
+  <div>
+    <h1>404</h1>
+    <NuxtPage></NuxtPage>
+    <button @click="handleBack">返回</button>
+  </div>
+</template>
+
+<script setup lang="ts">
+const router = useRouter()
+const handleBack = () => {
+  console.log('back')
+  router.back()
+}
+</script>
+
+<style lang="scss" scoped></style>
